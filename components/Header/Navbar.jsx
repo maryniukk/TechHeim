@@ -1,16 +1,24 @@
+import React from 'react'
+import styles from './Navbar.module.scss'
+
 const Navbar = () => {
   const navbarArray = [
-    { name: 'Home' },
-    { name: 'Products' },
-    { name: 'Blog' },
-    { name: 'FAQ' },
-    { name: 'Contact Us ' },
+    { name: 'Home', id: 'home' },
+    { name: 'Products', id: 'products' },
+    { name: 'Blog', id: 'blog' },
+    { name: 'FAQ', id: 'faq' },
+    { name: 'Contact Us ', id: 'contact' },
   ]
+
   const navbarList = navbarArray.map((item) => (
-    <li key={item.id}>
-      <a href="/">{item.name}</a>
-    </li>
+    <div key={item.id}>
+      <a className={styles.link} href="/">
+        {item.name}
+      </a>
+    </div>
   ))
-  return <div>{navbarList}</div>
+
+  return <div className={styles.link}>{navbarList}</div>
 }
+
 export default Navbar
