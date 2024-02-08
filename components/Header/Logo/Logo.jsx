@@ -1,4 +1,4 @@
-import img from '../../img/Desktop/logo.jpg'
+import img from '../../../img/logo.jpg'
 const Logo = () => {
   return (
     <div>
