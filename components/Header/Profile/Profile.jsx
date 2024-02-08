@@ -1,15 +1,15 @@
 import React from 'react'
-
+import styles from './Profile.module.scss'
 const Profile = () => {
   return (
-    <div>
-      <a href="/Search">
+    <div className={styles.images}>
+      <a href="#!">
         <img src="../../../img/search.svg" alt="Search" />
       </a>
-      <a href="/Basket">
+      <a href="#!">
         <img src="../../../img/basket.svg" alt="Basket" />
       </a>
-      <a href="/Profile">
+      <a href="#!">
         <img src="../../../img/profile.svg" alt="Profile" />
       </a>
     </div>
