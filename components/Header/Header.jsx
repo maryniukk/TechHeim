@@ -7,7 +7,9 @@ const Header = () => {
     <div className={styles.list}>
       <Logo />
       <Navbar />
-      <Profile />
+      <div className={styles.right}>
+        <Profile />
+      </div>
     </div>
   )
 }
