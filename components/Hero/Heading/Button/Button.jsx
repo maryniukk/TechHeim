@@ -20,16 +20,7 @@ const Button = () => {
       <a href="#!" onClick={openModal} className={styles.button}>
         Explore more
       </a>
-      {showModal ? (
-        <div className={styles.modal}>
-          <div className={styles.modalContent}>
-            <span className={styles.close} onClick={closeModal}>
-              &times;
-            </span>
-            {/* Здесь вы можете разместить содержимое вашего модального окна */}
-          </div>
-        </div>
-      ) : null}
+      {showModal ? <ModalWindow /> : null}
     </div>
   )
 }
