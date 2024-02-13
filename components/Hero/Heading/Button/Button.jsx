@@ -1,26 +1,24 @@
 import React, { useState } from 'react'
 import styles from './Button.module.scss'
+
 const Button = () => {
-  const [showModal, SetShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
   const openModal = () => {
-    // Function for form opening
-    SetShowModal(true)
+    // Функция для открытия модального окна
+    setShowModal(true)
   }
 
   const closeModal = () => {
-    // Function for form closing
-    showModal(false)
+    // Функция для закрытия модального окна
+    setShowModal(false)
   }
-
-  const modalWindowLogic = () => {}
 
   return (
     <div className={styles.buttonWrapper}>
       <a href="#!" onClick={openModal} className={styles.button}>
         Explore more
       </a>
-      {showModal ? <ModalWindow /> : null}
     </div>
   )
 }
