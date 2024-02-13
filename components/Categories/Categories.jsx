@@ -1,7 +1,20 @@
 import React from 'react'
-
+import categoriesArray from './categories'
+import styles from './categories.module.scss'
 const Categories = () => {
-  return <div>Categories</div>
+  return (
+    <div className={styles.categoriesContainer}>
+      {categoriesArray.map((item) => (
+        <div key={item.id} className={styles.container}>
+          <div key={item.id} className={styles.categoryItem}>
+            <a key={item.id} href="#!">
+              <img width={190} src={item.image} alt={categoriesArray.id} />
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
 }
 
 export default Categories

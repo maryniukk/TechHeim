@@ -1,0 +1,12 @@
+.categoriesContainer {
+  display: flex;
+  flex-wrap: wrap; /* если вы хотите, чтобы элементы переносились на новую строку при нехватке места */
+  justify-content: center;
+}
+
+.categoryItem {
+  margin-top: 50px;
+}
+.paragraph {
+  padding-left: 15px;
+}
