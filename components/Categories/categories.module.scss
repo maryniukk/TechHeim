@@ -10,3 +10,11 @@
 .paragraph {
   padding-left: 15px;
 }
+.categories {
+  :hover {
+    size: 60px;
+  }
+  .categories:hover {
+    background-size: 30px;
+  }
+}
