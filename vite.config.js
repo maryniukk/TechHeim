@@ -1,11 +1,14 @@
-import react from '@vitejs/plugin-react-swc'
-import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path"; // Импортируем модуль path
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [{ find: '@/components', replacement: path.resolve(__dirname, 'src/components') }],
-  },
-})
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+      "~routes": path.resolve(__dirname, "./src/components"), // Используем '~' вместо 'routes' для избежания конфликтов
+      "~images": path.resolve(__dirname, "./src/img"), // Используем '~' вместо 'images' для избежания конфликтов
+    }
+  }
+});
