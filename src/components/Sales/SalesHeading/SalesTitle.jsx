@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './Sales.module.scss'
-const Sales = () => {
+import styles from './SalesTitle.module.scss'
+const SalesTitle = () => {
   return (
     <div className={styles.wrapper}>
       <div>
@@ -12,8 +12,9 @@ const Sales = () => {
           </a>
         </div>
       </div>
+
     </div>
   )
 }
 
-export default Sales
+export default SalesTitle

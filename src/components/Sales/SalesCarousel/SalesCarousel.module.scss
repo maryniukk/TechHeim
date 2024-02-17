@@ -1,0 +1,36 @@
+.flex{
+  display: flex;
+}
+.h3{
+  color: black;
+  font-weight: 300;
+}
+.padding{
+  background-color: aliceblue;
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 50px;
+}
+.percent{
+  border-radius: 10px;
+  background-color: #fddbc9;
+  color: #f25d0c;
+  border-width: solid;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 45px
+}
+.priceFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.noDiscountPrice{
+  text-decoration: line-through;
+}
+.discountPrice{
+  justify-content: end;
+}
+.boxPadding{
+  padding-top: 50px;
+  padding-left: 20px;
+}

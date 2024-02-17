@@ -4,9 +4,10 @@ import Categories from './components/Categories/Categories.jsx'
 import Header from './components/Header/Header.jsx'
 import Heading from './components/Hero/Heading/Heading.jsx'
 import HeroImg from './components/Hero/HeroImg/HeroImg.jsx'
-import Sales from './components/Sales/Sales.jsx'
+
 import './App.css'
 import styles from './App.module.scss'
+import Sales from './components/Sales/SalesHeading/Sales.jsx'
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
           <Heading />
           <HeroImg />
         </div>
-        <Categories />
-        <Sales />
+          <Categories />
+          <Sales/>
       </div>
     </BrowserRouter>
   )
