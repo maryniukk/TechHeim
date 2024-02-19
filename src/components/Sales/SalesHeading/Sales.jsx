@@ -9,7 +9,7 @@ const Sales = () => {
     <div className={styles.flex}>
 
       <SalesTitle/>
-        <div>
+        <div className={styles.boxPadding}>
           <SalesCarousel SalesArray={SalesArray} />
         </div>
         </div>

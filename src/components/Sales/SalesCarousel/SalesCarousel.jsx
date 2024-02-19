@@ -34,7 +34,7 @@ const SalesCarousel = ({ SalesArray }) => {
 
   return (
     <div className={styles.flex}>{corouselList}</div>
-  );
-};
+  )
+}
 
 export default SalesCarousel;
