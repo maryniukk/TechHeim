@@ -12,7 +12,6 @@ const SalesTitle = () => {
           </a>
         </div>
       </div>
-
     </div>
   )
 }

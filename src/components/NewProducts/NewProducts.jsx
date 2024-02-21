@@ -1,4 +1,5 @@
 import React from 'react'
+import NewProductsCatalog from './NewProductsCatalog/NewProductsCatalog'
 import NewProductsHeading from './NewProductsHeading/NewProductsHeading'
 const NewProducts = () => {
   return (
