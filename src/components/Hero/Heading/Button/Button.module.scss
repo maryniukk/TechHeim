@@ -23,6 +23,17 @@
   cursor: default;
   padding: 40px 20px;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Затемненный фон */
+}
+.modalWindow {
+  z-index: 1000; /* Убедитесь, что модальное окно находится над затемненным фоном */
+}
 .modalWindow {
   position: absolute;
   width: auto;

@@ -3,17 +3,20 @@ import React, { useState } from 'react'
 import styles from './Button.module.scss'
 
 const Button = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false) // useState for modal
 
   return (
     <div className={styles.buttonWrapper}>
-      <a onClick={() => setIsOpen(true)} href="#" className={styles.button}>
+      <a onClick={() => setIsModalOpen(true)} href="#" className={styles.button}>
         Explore more
       </a>
 
-      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className={styles.modalWindow}>
+      {isModalOpen && <div className={styles.overlay}></div>}
+
+      <Dialog open={isModalOpen} onClose={() => setIsModalOpen(false)} className={styles.modalWindow}>
         <Dialog.Panel>
-          <button onClick={() => setIsOpen(false)}>x</button>
+          <button onClick={() => setIsModalOpen(false)}>x</button>
+
           <Dialog.Title className={styles.title}>Log in to Tech Heim</Dialog.Title>
 
           <Dialog.Description>
