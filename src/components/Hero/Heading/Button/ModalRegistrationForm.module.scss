@@ -111,4 +111,22 @@ input:hover {
 }
 .keepMeLoggedIn {
   font-size: 15px;
+  padding-left: 5px;
+}
+.logInBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.logInButton {
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #0c68f4;
+  box-shadow: none;
+  padding: 15px 80px 15px 80px;
+  text-decoration: none;
+  :hover {
+    background-color: #093a83;
+  }
 }

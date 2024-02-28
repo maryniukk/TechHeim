@@ -23,6 +23,11 @@ const ModalWindow = ({ isModalOpen, setIsModalOpen }) => {
             <input className={styles.rememberMe} type="checkbox" name="" id="" />
             <label className={styles.keepMeLoggedIn}>Keep me logged in</label>
           </div>
+          <div className={styles.logInBtnWrapper}>
+            <a href="#" className={styles.logInButton}>
+              Log in
+            </a>
+          </div>
         </Dialog.Description>
       </Dialog.Panel>
     </Dialog>
