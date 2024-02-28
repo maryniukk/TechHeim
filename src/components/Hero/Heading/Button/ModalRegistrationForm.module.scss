@@ -21,7 +21,6 @@
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   cursor: default;
-  padding: 40px 20px;
 }
 .overlay {
   position: fixed;
@@ -44,18 +43,23 @@
   border-color: #0d0c22;
   background-color: rgb(255, 255, 255);
   cursor: default;
-  padding: 40px 20px;
+  padding: 10px 15px 10px 15px;
 }
 .title {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 30px;
+  font-weight: 300;
 }
 .inputMail {
+  font-size: 20px;
   height: 45px;
   line-height: 30px;
-  padding: 0 5rem;
-  padding-left: 3rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 50px;
+  padding-right: 50px;
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
@@ -66,11 +70,14 @@
 }
 
 .inputPassword {
+  font-size: 20px;
   margin-top: 15px;
   height: 45px;
   line-height: 30px;
-  padding: 0 5rem;
-  padding-left: 3rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 50px;
+  padding-right: 50px;
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
@@ -81,9 +88,11 @@
 }
 .inputMail::placeholder {
   color: #94a3b8;
+  font-weight: 200;
 }
 .inputPassword::placeholder {
   color: #94a3b8;
+  font-weight: 200;
 }
 .inputPassword:focus,
 input:hover {
@@ -91,4 +100,15 @@ input:hover {
   border-color: rgb(248, 206, 129);
   background-color: #fff;
   box-shadow: 0 0 0 5px rgba(248, 187, 129, 0.3);
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.loggIn {
+  padding-top: 15px;
+}
+.keepMeLoggedIn {
+  font-size: 15px;
 }

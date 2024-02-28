@@ -1,0 +1,32 @@
+import { Dialog } from '@headlessui/react'
+import React, { useState } from 'react'
+import closeImg from '../../../../img/closeButton.svg'
+import styles from './ModalRegistrationForm.module.scss'
+const ModalWindow = ({ isModalOpen, setIsModalOpen }) => {
+  const [isRadioChecked, setIsRadioChecked] = useState(false)
+
+  return (
+    <Dialog open={isModalOpen} onClose={() => setIsModalOpen(false)} className={styles.modalWindow}>
+      <Dialog.Panel>
+        <div className={styles.imgContainer}>
+          <img src={closeImg} className={styles.closeButton} onClick={() => setIsModalOpen(false)}></img>
+        </div>
+        <Dialog.Title className={styles.title}>Log in to Tech Heim</Dialog.Title>
+        <Dialog.Description>
+          <div>
+            <input className={styles.inputMail} type="text" placeholder="Email"></input>
+          </div>
+          <div>
+            <input className={styles.inputPassword} type="password" placeholder="Password"></input>
+          </div>
+          <div className={styles.loggIn}>
+            <input className={styles.rememberMe} type="checkbox" name="" id="" />
+            <label className={styles.keepMeLoggedIn}>Keep me logged in</label>
+          </div>
+        </Dialog.Description>
+      </Dialog.Panel>
+    </Dialog>
+  )
+}
+
+export default ModalWindow

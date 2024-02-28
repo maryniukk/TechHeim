@@ -1,7 +1,6 @@
 import React from 'react'
-import Button from './Button/Button'
+import ModalRegistrationForm from './Button/ModalRegistrationForm'
 import styles from './Heading.module.scss'
-
 const Heading = () => {
   return (
     <div>
@@ -10,7 +9,7 @@ const Heading = () => {
         <h2 className={styles.h2}>
           "Join the <span className={styles.orange}>digital revolution</span>"
         </h2>
-        <Button />
+        <ModalRegistrationForm />
       </div>
     </div>
   )
