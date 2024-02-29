@@ -22,7 +22,7 @@ function App() {
         <Sales />
         <NewProducts />
         <Routes>
-          <Route exact path="/" component={<App />} />
+          <Route exact path="/" component={<App />} /> {/* это дефолтный компонент */}
         </Routes>
       </div>
     </Router>
