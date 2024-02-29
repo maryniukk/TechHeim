@@ -1,10 +1,8 @@
 import { Dialog } from '@headlessui/react'
-import React, { useState } from 'react'
+import React from 'react'
 import closeImg from '../../../../img/closeButton.svg'
 import styles from './ModalRegistrationForm.module.scss'
 const ModalWindow = ({ isModalOpen, setIsModalOpen }) => {
-  const [isRadioChecked, setIsRadioChecked] = useState(false)
-
   return (
     <Dialog open={isModalOpen} onClose={() => setIsModalOpen(false)} className={styles.modalWindow}>
       <Dialog.Panel>
@@ -25,7 +23,7 @@ const ModalWindow = ({ isModalOpen, setIsModalOpen }) => {
           </div>
           <div className={styles.logInBtnWrapper}>
             <a href="#" className={styles.logInButton}>
-              Log in
+              Log In
             </a>
           </div>
         </Dialog.Description>
