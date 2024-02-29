@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import styles from './App.module.scss'
 import Categories from './components/Categories/Categories.jsx'
@@ -11,7 +11,7 @@ import Sales from './components/Sales/SalesHeading/Sales.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className={styles.container}>
         <Header />
         <div className={styles.heroContent}>
@@ -21,8 +21,11 @@ function App() {
         <Categories />
         <Sales />
         <NewProducts />
+        <Routes>
+          <Route exact path="/" component={<App />} />
+        </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   )
 }
 
