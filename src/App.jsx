@@ -8,6 +8,8 @@ import Heading from './components/Hero/Heading/Heading.jsx'
 import HeroImg from './components/Hero/HeroImg/HeroImg.jsx'
 import NewProducts from './components/NewProducts/NewProducts.jsx'
 import Sales from './components/Sales/SalesHeading/Sales.jsx'
+import Blog from './pages/Blog'
+import Products from './pages/Products'
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
         <Sales />
         <NewProducts />
         <Routes>
-          <Route exact path="/" component={<App />} /> {/* это дефолтный компонент */}
+          <Route exact path="/" component={<App />} />
+          <Route exact path="/products" component={<Products />} />
+          <Route exact path="/blog" component={<Blog />} />
         </Routes>
       </div>
     </Router>
