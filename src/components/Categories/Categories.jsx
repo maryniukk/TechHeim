@@ -1,6 +1,6 @@
 import React from 'react'
-import categoriesArray from './categories'
 import styles from './categories.module.scss'
+import categoriesArray from './categoriesArray'
 const Categories = () => {
   return (
     <div className={styles.categoriesContainer}>
