@@ -1,16 +1,23 @@
 import React from 'react'
-import star from '../../../img/Star.png' // Импортируем изображение звездочки
+import star from '../../../img/Star.png'
 import styles from './NewProductsCatalog.module.scss'
 import unmappedArray from './NpArray'
 
 const NewProductsCatalog = () => {
+  const ShortName = ({ productName }) => {
+    return (
+      <div className={styles.flex}>
+        {productName.length > 25 ? `${productName.substring(0, 25)}...` : productName}
+      </div>
+    )
+  }
   const mappedArray = unmappedArray.map((array, index) => (
     <div className={styles.wholeBox} key={index}>
       <div className={styles.box} key={index}>
         <img className={styles.productImg} src={array.productImg} alt="" />
-        <p className={styles.productName}>{array.productName}</p>
+        <ShortName productName={array.productName} />
         <p>{array.price}</p>
-        {/* Добавляем изображение звездочки */}
+
         <div className={styles.ratingContainer}>
           <img className={styles.ratingStar} src={star} alt="Rating" />
           <p className={styles.ratingValue}>{array.rating}</p>

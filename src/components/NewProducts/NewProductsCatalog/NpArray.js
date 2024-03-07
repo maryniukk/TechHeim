@@ -1,4 +1,4 @@
-import img03 from '../../../img/Samsung.png'
+import img03 from '../../../img/SamsungGalaxy.png'
 import star from '../../../img/Star.png'
 import img04 from '../../../img/VR.png'
 import img01 from '../../../img/iPhone.png'

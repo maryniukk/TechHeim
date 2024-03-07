@@ -10,7 +10,7 @@ const ModalRegistrationForm = () => {
         <a onClick={() => setIsModalOpen(true)} href="#" className={styles.button}>
           Explore more
         </a>
-        {isModalOpen && <div className={styles.overlay}></div>} {/* затемнение фона */}
+        {isModalOpen && <div className={styles.overlay}></div>}
       </div>
       <ModalWindow isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </div>

@@ -16,7 +16,10 @@
   font-size: 25px;
 }
 .linkText {
-  font-weight: 300;
+  font-weight: 200;
   color: black;
   text-decoration: none;
+}
+.linkText:hover {
+  text-decoration: underline;
 }
