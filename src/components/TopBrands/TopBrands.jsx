@@ -10,7 +10,7 @@ import styles from './TopBrands.module.scss'
 const TopBrands = () => {
   return (
     <div className={styles.container}>
-      <h2>Top Brands</h2>
+      <h2 className={styles.h2}>Top Brands</h2>
       <hr />
       <div className={styles.box}>
         <div className={styles.boxItem}>

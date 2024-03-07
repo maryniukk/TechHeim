@@ -14,7 +14,7 @@ const SalesCarousel = ({ SalesArray }) => {
   const corouselList = SalesArray.map((sales, index) => (
     <div key={index}>
       <div className={styles.boxPadding}>
-        <div>
+        <div className={styles.box}>
           <div className={styles.percent}>
             <p>{sales.SalePercent}</p>
           </div>

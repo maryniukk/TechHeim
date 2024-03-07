@@ -1,10 +1,10 @@
 import React from 'react'
-import star from '../../../img/Star.png' // Импортируем изображение звездочки
+import star from '../../../img/Star.png'
 import styles from './NewProductsCatalog.module.scss'
 import unmappedArray from './NpArray'
 
 const NewProductsCatalog = () => {
-  const shortName = ({ productName }) => {
+  const ShortName = ({ productName }) => {
     return (
       <div className={styles.flex}>
         {productName.length > 25 ? `${productName.substring(0, 25)}...` : productName}
@@ -15,8 +15,7 @@ const NewProductsCatalog = () => {
     <div className={styles.wholeBox} key={index}>
       <div className={styles.box} key={index}>
         <img className={styles.productImg} src={array.productImg} alt="" />
-
-        <shortName productName={array.productName} />
+        <ShortName productName={array.productName} />
         <p>{array.price}</p>
 
         <div className={styles.ratingContainer}>
