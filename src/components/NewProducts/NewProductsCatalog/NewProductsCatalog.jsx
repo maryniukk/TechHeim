@@ -15,7 +15,8 @@ const NewProductsCatalog = () => {
     <div className={styles.wholeBox} key={index}>
       <div className={styles.box} key={index}>
         <img className={styles.productImg} src={array.productImg} alt="" />
-        <p className={styles.productName}>{array.productName}</p>
+
+        <shortName productName={array.productName} />
         <p>{array.price}</p>
 
         <div className={styles.ratingContainer}>
