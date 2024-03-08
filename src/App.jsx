@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path={routes.home} element={<HomePage />} />
         <Route path={routes.products} element={<Products />} />
+        <Route path={routes.blog} element={<Products />} />
       </Routes>
     </BrowserRouter>
   )

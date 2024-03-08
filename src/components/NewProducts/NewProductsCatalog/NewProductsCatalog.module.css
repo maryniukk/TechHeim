@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.img {
+  justify-content: center;
+}
+
+.box {
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+}
+
+.star {
+  display: flex;
+  justify-content: flex-end;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 12px;
+  height: 13px;
+}
+
+.imgRating {
+  display: flex;
+}
+
+.ratingContainer {
+  margin-top: auto; /* Помещаем рейтинг в конец блока */
+  display: flex;
+  align-items: center; /* Центрируем содержимое вертикально */
+}
+
+.ratingValue {
+  margin-left: 5px;
+}
+
+.wholeBox {
+  display: flex;
+  justify-content: center;
+}
+
+.productImg {
+  width: 256px;
+}/*# sourceMappingURL=NewProductsCatalog.module.css.map */
