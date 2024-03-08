@@ -1,17 +1,19 @@
+@charset "UTF-8";
 .buttonWrapper {
   margin-top: 80px;
 }
+
 .button {
   align-items: center;
   background: #f45e0d;
   border: 0;
   border-radius: 8px;
-  box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+  box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 rgba(29, 13, 202, 0.0901960784);
   box-sizing: border-box;
-  color: white;
+  color: black;
   cursor: pointer;
   display: flex;
-  font-family: 'Cascadia Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1rem;
   justify-content: center;
   line-height: 1.5rem;
@@ -19,10 +21,12 @@
   position: relative;
   text-align: left;
   transition: 0.2s;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: pre;
+  width: -moz-max-content;
   width: max-content;
   word-break: normal;
   word-spacing: normal;
@@ -31,8 +35,8 @@
 }
 
 .button:hover {
-  background: #bb3837;
-  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+  background: #f14e4c;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 rgba(29, 13, 202, 0.0901960784);
 }
 
 .bg {
@@ -45,6 +49,7 @@
   background-color: rgb(255, 255, 255);
   cursor: default;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -53,9 +58,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Затемненный фон */
 }
+
 .modalWindow {
   z-index: 1000; /* Убедитесь, что модальное окно находится над затемненным фоном */
 }
+
 .modalWindow {
   position: absolute;
   width: auto;
@@ -68,9 +75,7 @@
   cursor: default;
   padding: 20px 20px 20px 20px;
 }
-.modalWindowPadding {
-  padding: 10px 30px 10px 30px;
-}
+
 .title {
   display: flex;
   justify-content: center;
@@ -78,10 +83,11 @@
   font-size: 30px;
   font-weight: 300;
 }
+
 .inputMail {
   font-size: 20px;
-  height: 35px;
-  font-family: 'Montserrat', sans-serif;
+  height: 45px;
+  font-family: "Montserrat", sans-serif;
   line-height: 30px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -94,13 +100,13 @@
   border-color: #b4b4b4;
   color: #0d0c22;
   transition: 0.5s ease;
-  margin-bottom: 10px;
 }
 
 .inputPassword {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  height: 35px;
-  font-family: 'Montserrat', sans-serif;
+  margin-top: 15px;
+  height: 45px;
   line-height: 30px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -110,29 +116,12 @@
   border-radius: 10px;
   outline: none;
   background-color: #f8fafc;
-  border-color: #b4b4b4;
   color: #0d0c22;
+  border-color: #b4b4b4;
   transition: 0.5s ease;
 }
-.inputUserName {
-  font-size: 20px;
-  height: 35px;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 30px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  outline: none;
-  background-color: #f8fafc;
-  border-color: #b4b4b4;
-  color: #0d0c22;
-  transition: 0.5s ease;
-  margin-bottom: 10px;
-}
-.inputUserName::placeholder {
+
+.inputMail::-moz-placeholder {
   color: #94a3b8;
   font-weight: 200;
 }
@@ -141,36 +130,47 @@
   color: #94a3b8;
   font-weight: 200;
 }
+
+.inputPassword::-moz-placeholder {
+  color: #94a3b8;
+  font-weight: 200;
+}
+
 .inputPassword::placeholder {
   color: #94a3b8;
   font-weight: 200;
 }
+
 .inputPassword:focus,
 input:hover {
   outline: none;
   border-color: #0c68f4;
   background-color: #fff;
-  box-shadow: 0 0 0 5px #0c69f42b;
+  box-shadow: 0 0 0 5px rgba(12, 105, 244, 0.168627451);
 }
 
 .imgContainer {
   display: flex;
   justify-content: flex-end;
 }
+
 .loggIn {
   padding-top: 15px;
 }
+
 .keepMeLoggedIn {
   font-size: 13px;
   padding-left: 5px;
   font-weight: 200;
-  font-family: 'Montserrat ', sans-serif;
+  font-family: "Montserrat ", sans-serif;
 }
+
 .logInBtnWrapper {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
+
 .logInButton {
   border-radius: 10px;
   font-size: 20px;
@@ -182,9 +182,11 @@ input:hover {
   font-weight: 300;
   transition: 0.3s ease;
 }
+
 .logInButton:hover {
   background-color: #093a83;
 }
+
 .closeButton {
   position: absolute;
   top: 10px;
@@ -192,13 +194,7 @@ input:hover {
   cursor: pointer;
   transition: 0.5s ease;
 }
+
 .closeButton:hover {
   transform: scale(1.2);
-}
-.showPassword {
-  position: absolute;
-}
-.passwordAbsolute {
-  font-size: 10px;
-  position: relative;
-}
+}/*# sourceMappingURL=ModalRegistrationForm.module.css.map */

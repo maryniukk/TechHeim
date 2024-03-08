@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "Heading.module.scss",
+    "Heading.module.css"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE,eAAA;EACA,gBAAA;EACA,cAAA;ACCF;;ADCA;EACE,gBAAA;EACA,cAAA;EACA,gBAAA;ACEF;;ADAA;EACE,cAAA;ACGF",
+  "file": "Heading.module.css"
+}

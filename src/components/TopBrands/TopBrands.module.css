@@ -3,18 +3,18 @@
   gap: 80px;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
-.boxItem {
-  :hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-  }
+
+.boxItem :hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
 }
+
 .h2 {
   font-weight: 400;
   font-size: 25px;
 }
+
 .container {
   margin-top: 90px;
-}
+}/*# sourceMappingURL=TopBrands.module.css.map */

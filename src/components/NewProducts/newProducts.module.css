@@ -1,0 +1,31 @@
+.box {
+  margin-top: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  padding-top: 20px;
+}
+
+.line {
+  color: gainsboro;
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.linkText {
+  font-weight: 200;
+  color: black;
+  text-decoration: none;
+}
+
+.linkText:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=newProducts.module.css.map */
