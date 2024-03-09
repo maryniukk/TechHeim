@@ -29,7 +29,7 @@ const ModalWindow = ({ isModalOpen, setIsModalOpen }) => {
             ></input>
             <label onClick={() => setShowPassword(!showPassword)} className={styles.showPassword}>
               <div className={styles.eye}>
-                <img width={25} src={showPassword ? closedEyeImg : eyeImg}></img>
+                <img width={25} src={showPassword ? eyeImg : closedEyeImg}></img>
               </div>
             </label>
           </div>

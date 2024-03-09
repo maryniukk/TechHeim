@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import Heading from '../components/Hero/Heading/Heading'
 import HeroImg from '../components/Hero/HeroImg/HeroImg'
 import NewProducts from '../components/NewProducts/NewProducts'
+import OurBlogs from '../components/OurBlogs/OurBlogs'
 import Sales from '../components/Sales/SalesHeading/Sales'
 import TopBrands from '../components/TopBrands/TopBrands'
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Sales />
       <NewProducts />
       <TopBrands />
+      <OurBlogs />
     </div>
   )
 }
