@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom'
 import styles from './OurBlogs.module.scss'
 const OurBlogs = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.box}>
-        <div>OurBlogs</div>
+        <h2 className={styles.h2}>OurBlogs</h2>
         <div>
-          <div>
+          <div className={styles.linkBox}>
             <Link className={styles.link} to="/blog">
               View All
             </Link>
           </div>
         </div>
       </div>
-      <hr />
+      <hr className={styles.line} />
     </div>
   )
 }
