@@ -5,6 +5,7 @@ import Heading from '../components/Hero/Heading/Heading'
 import HeroImg from '../components/Hero/HeroImg/HeroImg'
 import NewProducts from '../components/NewProducts/NewProducts'
 import OurBlogs from '../components/OurBlogs/OurBlogs'
+import OurServices from '../components/OurServices/OurServices'
 import Sales from '../components/Sales/SalesHeading/Sales'
 import TopBrands from '../components/TopBrands/TopBrands'
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
       <NewProducts />
       <TopBrands />
       <OurBlogs />
+      <OurServices />
     </div>
   )
 }
