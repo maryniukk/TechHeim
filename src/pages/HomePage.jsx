@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../App.module.scss'
+import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Heading from '../components/Hero/Heading/Heading'
 import HeroImg from '../components/Hero/HeroImg/HeroImg'
@@ -21,6 +22,7 @@ const HomePage = () => {
       <TopBrands />
       <OurBlogs />
       <OurServices />
+      <Footer />
     </div>
   )
 }
