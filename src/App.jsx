@@ -7,7 +7,7 @@ import Products from './pages/Products.jsx'
 
 export const routes = { home: '/', products: '/products', blog: '/blog', faq: '/faq', contact: '/contact' }
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>

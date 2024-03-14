@@ -9,6 +9,7 @@ import OurBlogs from '../components/OurBlogs/OurBlogs'
 import OurServices from '../components/OurServices/OurServices'
 import Sales from '../components/Sales/SalesHeading/Sales'
 import TopBrands from '../components/TopBrands/TopBrands'
+
 const HomePage = () => {
   return (
     <div className={styles.container}>

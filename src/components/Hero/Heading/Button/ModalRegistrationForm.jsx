@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './ModalRegistrationForm.module.scss'
 import ModalWindow from './ModalWindow'
+
 const ModalRegistrationForm = () => {
   const [isModalOpen, setIsModalOpen] = useState(false) // useState for modal
 

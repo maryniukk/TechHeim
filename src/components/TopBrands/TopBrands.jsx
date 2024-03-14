@@ -11,7 +11,7 @@ const TopBrands = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.h2}>Top Brands</h2>
-      <hr />
+      <hr className={styles.line} />
       <div className={styles.box}>
         <div className={styles.boxItem}>
           <a href="https://www.apple.com/">
