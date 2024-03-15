@@ -5,9 +5,19 @@
 }
 .h3 {
   font-weight: 500;
+  font-size: 25px;
 }
 .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+  font-size: 16px;
+}
+.companyLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import AmericanExpressImg from '../../../img/american express.png'
 import masterCardImg from '../../../img/master card.png'
 import PayPalImg from '../../../img/paypal.png'
@@ -8,12 +9,28 @@ import styles from './Company.module.scss'
 const Company = () => {
   return (
     <div>
-      <div>
+      <div className={styles.companyLinks}>
         <h3 className={styles.h3}>Company</h3>
-        <p className={styles.text}>About us</p>
-        <p className={styles.text}>Blog</p>
-        <p className={styles.text}>Returns</p>
-        <p className={styles.text}>Order status</p>
+        <div>
+          <Link to={'/about'} className={styles.text}>
+            About us
+          </Link>
+        </div>
+        <div>
+          <Link to={'/blog'} className={styles.text}>
+            Blog
+          </Link>
+        </div>
+        <div>
+          <Link to={'/returns'} className={styles.text}>
+            Returns
+          </Link>
+        </div>
+        <div>
+          <Link to={'/contact'} className={styles.text}>
+            Order status
+          </Link>
+        </div>
       </div>
       <div className={styles.servicesLinks}>
         <div>
