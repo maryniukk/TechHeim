@@ -8,7 +8,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        const response = await fetch('https://jsonplaceholder.typicode.com/comments')
         const jsonData = await response.json()
         setData(jsonData)
       } catch (error) {
@@ -22,14 +22,8 @@ const Blog = () => {
   return (
     <div className={styles.container}>
       <Header />
-      {data ? (
-        <div>
-          <h3>{data.title}</h3>
-          <p>{data.completed ? 'Completed' : 'Not completed'}</p>
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      {data ? data.map((item) => <div key={item.id}>{item.name}</div>) : 'Loading...'}
+      {data ? 'Success' : 'Error'}
     </div>
   )
 }

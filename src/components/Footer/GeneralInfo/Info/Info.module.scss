@@ -1,0 +1,24 @@
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+  font-size: 16px;
+
+  :hover {
+    text-decoration: underline;
+  }
+}
+.h3 {
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+.wrapper {
+  margin-top: 40px;
+}
+.companyLinks {
+  margin-left: 60px;
+}

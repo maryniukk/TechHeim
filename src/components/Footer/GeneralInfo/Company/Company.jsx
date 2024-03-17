@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import AmericanExpressImg from '../../../img/american express.png'
-import masterCardImg from '../../../img/master card.png'
-import PayPalImg from '../../../img/paypal.png'
-import visaImg from '../../../img/visa.png'
+import AmericanExpressImg from '../../../../img/american express.png'
+import masterCardImg from '../../../../img/master card.png'
+import PayPalImg from '../../../../img/paypal.png'
+import visaImg from '../../../../img/visa.png'
+
 import styles from './Company.module.scss'
 
 const Company = () => {
@@ -49,4 +50,5 @@ const Company = () => {
     </div>
   )
 }
+
 export default Company
